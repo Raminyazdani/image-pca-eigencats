@@ -1,0 +1,11 @@
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(docs): Initial commit with basic README
+
+Created initial repository with a basic README outlining the project goals.
+This is the foundation for a PCA analysis project on cat face images.
+
+The README provides a high-level overview of what the project will accomplish:
+applying Principal Component Analysis to extract eigenfaces (eigencats) from
+a dataset of cat face images.
+
+Why: Every project needs a clear starting point and project description.
+Verified: README.md exists and contains project description.
