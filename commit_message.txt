@@ -1,11 +1,17 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(docs): Initial commit with basic README
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(config): Add .gitignore and requirements.txt
 
-Created initial repository with a basic README outlining the project goals.
-This is the foundation for a PCA analysis project on cat face images.
+Added project configuration files for proper Python project setup.
 
-The README provides a high-level overview of what the project will accomplish:
-applying Principal Component Analysis to extract eigenfaces (eigencats) from
-a dataset of cat face images.
+Created .gitignore to exclude:
+- Python bytecode and cache files (__pycache__, *.pyc)
+- Jupyter notebook checkpoints (.ipynb_checkpoints)
+- Virtual environments (venv/, env/)
+- IDE configuration files
 
-Why: Every project needs a clear starting point and project description.
-Verified: README.md exists and contains project description.
+Created requirements.txt with core dependencies:
+- numpy>=1.21.0 for linear algebra operations
+- matplotlib>=3.3.0 for visualization
+- jupyter>=1.0.0 for interactive notebook environment
+
+Why: Proper project hygiene from the start prevents committing unwanted files.
+Verified: Both files exist and contain appropriate patterns/dependencies.
