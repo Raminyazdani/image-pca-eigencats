@@ -1,17 +1,13 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(config): Add .gitignore and requirements.txt
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(notebook): Initialize Jupyter notebook with imports and structure
 
-Added project configuration files for proper Python project setup.
+Created eigencats.ipynb with basic structure and imports.
 
-Created .gitignore to exclude:
-- Python bytecode and cache files (__pycache__, *.pyc)
-- Jupyter notebook checkpoints (.ipynb_checkpoints)
-- Virtual environments (venv/, env/)
-- IDE configuration files
+Added initial cells with:
+- Title and introduction markdown
+- Import statements (numpy, matplotlib)
+- Basic notebook configuration (matplotlib inline)
 
-Created requirements.txt with core dependencies:
-- numpy>=1.21.0 for linear algebra operations
-- matplotlib>=3.3.0 for visualization
-- jupyter>=1.0.0 for interactive notebook environment
+The notebook structure is ready for implementing PCA functions.
 
-Why: Proper project hygiene from the start prevents committing unwanted files.
-Verified: Both files exist and contain appropriate patterns/dependencies.
+Why: Setting up the development environment before writing algorithms.
+Verified: Notebook exists and is a valid JSON structure with initial cells.
