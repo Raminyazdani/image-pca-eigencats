@@ -1,13 +1,15 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(notebook): Initialize Jupyter notebook with imports and structure
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(utils): Implement plot_cats visualization function
 
-Created eigencats.ipynb with basic structure and imports.
+Implemented plot_cats() utility function for grid visualization of cat faces.
 
-Added initial cells with:
-- Title and introduction markdown
-- Import statements (numpy, matplotlib)
-- Basic notebook configuration (matplotlib inline)
+Function features:
+- Takes array of cat face images
+- Displays them in a customizable grid layout
+- Handles grayscale rendering with proper colormaps
+- Removes axes for cleaner visualization
 
-The notebook structure is ready for implementing PCA functions.
+This utility will be essential for visualizing mean cats, eigencats,
+and reconstructed images throughout the analysis.
 
-Why: Setting up the development environment before writing algorithms.
-Verified: Notebook exists and is a valid JSON structure with initial cells.
+Why: Building visualization tools first makes debugging and verification easier.
+Verified: Function defined in notebook and produces matplotlib grid layouts.
