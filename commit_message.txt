@@ -1,15 +1,14 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(utils): Implement plot_cats visualization function
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(utils): Implement eigenvector sorting utility
 
-Implemented plot_cats() utility function for grid visualization of cat faces.
+Implemented sort_eigvectors() utility to order eigenvectors by eigenvalues.
 
 Function features:
-- Takes array of cat face images
-- Displays them in a customizable grid layout
-- Handles grayscale rendering with proper colormaps
-- Removes axes for cleaner visualization
+- Sorts eigenvalues in descending order
+- Reorders corresponding eigenvectors to match
+- Essential for PCA to select principal components by importance
 
-This utility will be essential for visualizing mean cats, eigencats,
-and reconstructed images throughout the analysis.
+This utility ensures we always work with eigenvectors ordered by their
+contribution to variance, which is crucial for dimensionality reduction.
 
-Why: Building visualization tools first makes debugging and verification easier.
-Verified: Function defined in notebook and produces matplotlib grid layouts.
+Why: Eigenvectors must be ordered by eigenvalue magnitude for proper PCA.
+Verified: Function correctly sorts and returns ordered eigenvectors.
