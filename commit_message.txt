@@ -1,15 +1,15 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(pca): Add preprocessing function for mean-centering data
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(pca): Implement eigencats_evd using eigenvalue decomposition
 
-Implemented preprocess() function for mean-centering image data.
+Implemented eigencats_evd() function using eigenvalue decomposition.
 
 Function features:
-- Computes mean face across all images
-- Subtracts mean from each image (centering)
-- Flattens 2D images into 1D vectors
-- Returns centered vectors ready for PCA
+- Computes covariance matrix from centered data
+- Performs eigendecomposition using numpy.linalg.eig
+- Returns sorted eigenvalues and eigenvectors (eigencats)
 
-Mean-centering is essential for PCA as it ensures the first principal
-component captures maximum variance rather than just the mean.
+This is the classic PCA approach using EVD. The eigenvectors of the
+covariance matrix are the principal components, ordered by their
+corresponding eigenvalues (variance explained).
 
-Why: Preprocessing is a critical step before eigendecomposition.
-Verified: Function produces mean-centered flattened vectors with correct shapes.
+Why: EVD is the fundamental mathematical approach to PCA.
+Verified: Function correctly computes and sorts eigencats.
