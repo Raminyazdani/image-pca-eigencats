@@ -1,15 +1,16 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(pca): Implement eigencats_evd using eigenvalue decomposition
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(analysis): Add code to visualize eigencats from EVD
 
-Implemented eigencats_evd() function using eigenvalue decomposition.
+Added visualization code to display eigencats computed via EVD.
 
-Function features:
-- Computes covariance matrix from centered data
-- Performs eigendecomposition using numpy.linalg.eig
-- Returns sorted eigenvalues and eigenvectors (eigencats)
+Features:
+- Loads placeholder cat data
+- Calls eigencats_evd() to compute principal components
+- Visualizes first 4 eigencats in a grid
+- Displays variance contribution of each component
 
-This is the classic PCA approach using EVD. The eigenvectors of the
-covariance matrix are the principal components, ordered by their
-corresponding eigenvalues (variance explained).
+The visualization shows the principal "directions" of variation in the
+cat face dataset - these are the eigencats that capture different
+facial features.
 
-Why: EVD is the fundamental mathematical approach to PCA.
-Verified: Function correctly computes and sorts eigencats.
+Why: Visualization confirms the EVD implementation works correctly.
+Verified: Code produces grid of 4 eigencat visualizations.
