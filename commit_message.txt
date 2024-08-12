@@ -1,14 +1,15 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(utils): Implement eigenvector sorting utility
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(pca): Add preprocessing function for mean-centering data
 
-Implemented sort_eigvectors() utility to order eigenvectors by eigenvalues.
+Implemented preprocess() function for mean-centering image data.
 
 Function features:
-- Sorts eigenvalues in descending order
-- Reorders corresponding eigenvectors to match
-- Essential for PCA to select principal components by importance
+- Computes mean face across all images
+- Subtracts mean from each image (centering)
+- Flattens 2D images into 1D vectors
+- Returns centered vectors ready for PCA
 
-This utility ensures we always work with eigenvectors ordered by their
-contribution to variance, which is crucial for dimensionality reduction.
+Mean-centering is essential for PCA as it ensures the first principal
+component captures maximum variance rather than just the mean.
 
-Why: Eigenvectors must be ordered by eigenvalue magnitude for proper PCA.
-Verified: Function correctly sorts and returns ordered eigenvectors.
+Why: Preprocessing is a critical step before eigendecomposition.
+Verified: Function produces mean-centered flattened vectors with correct shapes.
