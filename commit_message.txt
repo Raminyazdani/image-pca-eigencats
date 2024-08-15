@@ -1,15 +1,17 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(pca): Add SVD-based PCA implementation
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(reconstruction): Implement image reconstruction [contains axis bug]
 
-Implemented eigencats_svd() function using singular value decomposition.
+Added image reconstruction functionality using eigencats.
 
-Function features:
-- Uses numpy.linalg.svd for decomposition
-- Extracts right singular vectors as eigencats
-- Returns singular values and eigencats
+Implemented reconstruct_cats() function to:
+- Project images onto principal components
+- Reconstruct using varying numbers of components
+- Demonstrate dimensionality reduction
 
-SVD provides an alternative, often more numerically stable approach
-to PCA. The right singular vectors of the centered data matrix are
-equivalent to the eigenvectors of the covariance matrix.
+However, introduced a subtle bug in the SVD preprocessing:
+used cats.mean(axis=1) instead of cats.mean(axis=0).
+This computes mean within each image instead of across images,
+causing incorrect mean-centering.
 
-Why: SVD is more efficient and stable for PCA than EVD.
-Verified: Function computes eigencats using SVD approach.
+Why: Reconstruction shows the power of PCA for compression.
+Bug: Wrong axis in mean calculation - a common NumPy mistake.
+Verified: Function exists but will produce distorted results.
