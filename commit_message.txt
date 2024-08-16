@@ -1,15 +1,16 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(bugfix): Fix axis parameter in SVD mean calculation
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(analysis): Add comprehensive reconstruction visualization and analysis
 
-Fixed critical bug in SVD preprocessing.
+Enhanced the reconstruction section with better analysis and visualization.
 
-Changed: cats.mean(axis=1) → cats.mean(axis=0)
+Added features:
+- Comparison grids showing original vs reconstructed images
+- Reconstruction with 10, 40, and 80 components
+- Visual demonstration of compression trade-offs
+- Markdown explaining quality vs dimensionality reduction
 
-The bug was causing mean to be computed along the wrong dimension:
-- axis=1 computes mean within each 64x64 image (wrong!)
-- axis=0 computes mean across all 80 images (correct!)
+The visualizations clearly show how increasing components improves
+reconstruction quality, demonstrating the fundamental trade-off
+in dimensionality reduction.
 
-Discovered when reconstructed images looked distorted and didn't
-match EVD results. Traced through the math and found the axis error.
-
-Why: This is a common NumPy mistake with multi-dimensional arrays.
-Verified: SVD now produces identical results to EVD approach.
+Why: Comprehensive visualization helps communicate PCA concepts.
+Verified: Multiple comparison grids display reconstruction quality.
