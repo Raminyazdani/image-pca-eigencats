@@ -1,16 +1,16 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(analysis): Add comprehensive reconstruction visualization and analysis
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(data): Integrate cat face dataset
 
-Enhanced the reconstruction section with better analysis and visualization.
+Added the cat face dataset as a NumPy binary file.
 
-Added features:
-- Comparison grids showing original vs reconstructed images
-- Reconstruction with 10, 40, and 80 components
-- Visual demonstration of compression trade-offs
-- Markdown explaining quality vs dimensionality reduction
+Dataset specifications:
+- 80 grayscale cat face images
+- Each image is 64x64 pixels
+- Stored as numpy array in cats.npy
+- Data type: float64, values in [0, 255] range
 
-The visualizations clearly show how increasing components improves
-reconstruction quality, demonstrating the fundamental trade-off
-in dimensionality reduction.
+Updated notebook code to load actual data from cats.npy instead
+of using placeholder/synthetic data. All visualizations now use
+real cat faces.
 
-Why: Comprehensive visualization helps communicate PCA concepts.
-Verified: Multiple comparison grids display reconstruction quality.
+Why: Real data makes the analysis meaningful and verifiable.
+Verified: cats.npy loads successfully with shape (80, 64, 64).
