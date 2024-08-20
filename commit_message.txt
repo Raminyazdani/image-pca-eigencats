@@ -1,16 +1,15 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(data): Integrate cat face dataset
+Ramin Yazdani | Image PCA & Eigencats | main | WIP(docs): Add reference visualization images
 
-Added the cat face dataset as a NumPy binary file.
+Added reference images showing expected outputs.
 
-Dataset specifications:
-- 80 grayscale cat face images
-- Each image is 64x64 pixels
-- Stored as numpy array in cats.npy
-- Data type: float64, values in [0, 255] range
+Created imgs/ directory with:
+- meancat.png: Expected mean cat face visualization
+- eigencats.png: Expected eigencat components
 
-Updated notebook code to load actual data from cats.npy instead
-of using placeholder/synthetic data. All visualizations now use
-real cat faces.
+These reference images serve as:
+- Documentation of expected outputs
+- Verification that implementation produces correct results
+- Visual examples for README and project showcase
 
-Why: Real data makes the analysis meaningful and verifiable.
-Verified: cats.npy loads successfully with shape (80, 64, 64).
+Why: Reference images help users verify their results.
+Verified: Both PNG files exist in imgs/ directory.
