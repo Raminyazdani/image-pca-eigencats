@@ -1,15 +1,22 @@
-Ramin Yazdani | Image PCA & Eigencats | main | WIP(docs): Add reference visualization images
+Ramin Yazdani | Image PCA & Eigencats | main | feat(docs): Add comprehensive documentation and analysis
 
-Added reference images showing expected outputs.
+Added comprehensive documentation to notebook and README.
 
-Created imgs/ directory with:
-- meancat.png: Expected mean cat face visualization
-- eigencats.png: Expected eigencat components
+Notebook enhancements:
+- Detailed markdown cells explaining each section
+- Mathematical formulas for covariance and eigendecomposition
+- Section headers: Preprocessing, EVD, SVD, Reconstruction, Analysis
+- Explanatory text for each implementation
+- Analysis comparing EVD and SVD equivalence
 
-These reference images serve as:
-- Documentation of expected outputs
-- Verification that implementation produces correct results
-- Visual examples for README and project showcase
+README enhancements:
+- Complete problem and approach description
+- Tech stack details with version requirements
+- Folder structure diagram
+- Installation and usage instructions
+- Data format and location information
+- Expected outputs description
+- Reproducibility notes and troubleshooting
 
-Why: Reference images help users verify their results.
-Verified: Both PNG files exist in imgs/ directory.
+Why: Good documentation makes the project accessible and professional.
+Verified: README and notebook contain comprehensive explanations.
