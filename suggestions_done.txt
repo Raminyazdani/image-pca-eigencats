@@ -1,0 +1,13 @@
+FILE	LOCATOR	BEFORE_SNIPPET	AFTER_SNIPPET	NOTES
+README.md	line 33	2.3/	image-pca-eigencats/	Removed assignment folder name; updated to professional repo name in folder structure diagram
+README.md	line 61	cd 2.3	cd /path/to/image-pca-eigencats	Removed assignment folder reference; added clear path instruction
+eigencats.ipynb	cell[9] (markdown)	## Step 1: Preprocessing	## Preprocessing	Removed assignment-style "Step 1:" prefix
+eigencats.ipynb	cell[9] (markdown)	First, calculate the average of all the cats images...	This section calculates the average of all cat images...	Changed from imperative instructions to descriptive narrative
+eigencats.ipynb	cell[12] (markdown)	## Step 2: Eigenvalue Decomposition (EVD)	## Eigenvalue Decomposition (EVD)	Removed "Step 2:" prefix
+eigencats.ipynb	cell[12] (markdown)	Compute the covariance matrix... Afterwards, plot...	This section computes the covariance matrix... are visualized.	Changed imperative to descriptive; removed "you can use" instruction
+eigencats.ipynb	cell[16] (markdown)	## Step 3: Singular Value Decomposition (SVD)	## Singular Value Decomposition (SVD)	Removed "Step 3:" prefix
+eigencats.ipynb	cell[16] (markdown)	Complete eigencats_svd by computing...	The eigencats_svd function computes...	Removed assignment "complete" language; made descriptive
+eigencats.ipynb	cell[20] (markdown)	## Step 4: Image Reconstruction	## Image Reconstruction	Removed "Step 4:" prefix
+eigencats.ipynb	cell[20] (markdown)	Reconstruct the cats... What do you notice?	This section reconstructs cat faces... to demonstrate the effect	Removed imperative and question; made descriptive
+eigencats.ipynb	cell[22] (markdown)	## Step 5: Analysis	## Analysis: Why EVD and SVD Produce Equivalent Results	Removed "Step 5:" and made header more descriptive
+eigencats.ipynb	cell[22] (markdown)	**Question:** Why are the results... <br> - The results of EVD...	The EVD and SVD approaches produce equivalent results...	Removed Q&A format; converted to explanatory prose with better formatting
