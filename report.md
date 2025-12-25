@@ -155,3 +155,74 @@
 **All findings documented in suggestion.txt**
 
 ---
+
+## Phase 3: Portfolio-Readiness Changes
+
+### 3.1 README.md Updates
+
+**Applied Changes:**
+1. Line 33: Changed folder structure from "2.3/" to "image-pca-eigencats/"
+2. Line 61: Changed "cd 2.3" to "cd /path/to/image-pca-eigencats" with note about working from repo root
+
+**Result:** README now accurately reflects the repository structure without assignment folder references.
+
+### 3.2 Notebook Reframing
+
+**Applied Changes to eigencats.ipynb:**
+1. Cell 9: Removed "Step 1:" prefix, changed from imperative instructions to descriptive narrative
+2. Cell 12: Removed "Step 2:" prefix, changed from imperative to descriptive
+3. Cell 16: Removed "Step 3:" prefix, removed "Complete..." assignment language
+4. Cell 20: Removed "Step 4:" prefix, removed question "What do you notice?"
+5. Cell 22: Removed "Step 5:" prefix, restructured from Q&A format to explanatory prose with better formatting
+
+**Result:** Notebook now reads as a professional demonstration/tutorial rather than an assignment worksheet.
+
+### 3.3 Safe Refactors
+
+**No code refactoring needed:**
+- Code is clean and functional
+- No dead code paths detected
+- Path handling is already correct (relative paths)
+- No absolute paths to fix
+
+### 3.4 Reproducibility & Dependencies
+
+**Status:** Already good
+- requirements.txt exists with appropriate dependencies
+- No environment variables needed
+- Data file (cats.npy) is included
+- No additional tooling required
+
+### 3.5 .gitignore Created
+
+Created `.gitignore` with standard Python/Jupyter patterns:
+- Python artifacts (__pycache__, *.pyc)
+- Jupyter checkpoints
+- Virtual environments
+- IDE files
+- Temporary files
+
+### 3.6 Verification
+
+**Performed:**
+1. ✓ Notebook JSON validity check - PASSED
+2. ✓ All markdown cells updated correctly - PASSED (no "Step N:" patterns remain)
+3. ✓ Dependencies installable - PASSED (numpy, matplotlib, jupyter)
+4. ✓ Data file loads correctly - PASSED (80 images, 64x64, float64)
+5. ✓ Smoke test - PASSED
+
+**Verification Summary:**
+- Notebook is syntactically valid
+- All assignment traces removed from markdown cells
+- Python environment functional
+- Data file accessible and correct format
+- Project is runnable
+
+### 3.7 Ledger Discipline
+
+**Completed:**
+- ✓ All 12 discovered issues logged in suggestion.txt
+- ✓ All 12 issues marked as APPLIED in suggestion.txt
+- ✓ All 12 applied changes documented in suggestions_done.txt with before/after snippets
+
+---
