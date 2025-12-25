@@ -30,7 +30,7 @@ This project demonstrates Principal Component Analysis (PCA) applied to facial i
 ## Folder Structure
 
 ```
-image-pca-eigencats/
+2.3/
 ├── eigencats.ipynb       # PCA implementation and analysis
 ├── cats.npy              # Cat image dataset (64x64 grayscale)
 ├── imgs/                 # Reference visualizations
@@ -58,8 +58,7 @@ pip install numpy matplotlib jupyter
 
 1. **Navigate to project directory:**
 ```bash
-cd /path/to/image-pca-eigencats
-# Or work from the repository root
+cd 2.3
 ```
 
 2. **Launch Jupyter Notebook:**
