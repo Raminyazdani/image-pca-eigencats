@@ -96,8 +96,62 @@
 
 ---
 
-## Phase 1.2: Target Identity (to be written to project_identity.md)
+## Phase 1.2: Target Identity
 
-Will be determined after pre-change audit is complete.
+**COMPLETED** - See project_identity.md for full details.
+
+**Summary:**
+- Display Title: Image PCA & Eigencats Analysis
+- Repo Slug: image-pca-eigencats (no change needed)
+- Tagline: Principal Component Analysis on cat face images demonstrating eigendecomposition and dimensionality reduction
+- Stack: Python, NumPy, Matplotlib, Jupyter Notebook
+- Topics: PCA, eigendecomposition, dimensionality-reduction, computer-vision, linear-algebra, SVD
+
+---
+
+## Phase 2: Pre-Change Audit
+
+### 2.1 Assignment/Academic Traces Found
+
+**README.md:**
+1. Line 33: Folder structure shows "2.3/" (assignment folder name)
+2. Line 61: Instruction "cd 2.3" (incorrect path reference)
+
+**eigencats.ipynb:**
+1. Cell 9: "## Step 1: Preprocessing" - assignment-style header
+2. Cell 12: "## Step 2: Eigenvalue Decomposition" - assignment-style header
+3. Cell 16: "## Step 3: Singular Value Decomposition" - assignment-style header
+4. Cell 20: "## Step 4: Image Reconstruction" - assignment-style header
+5. Cell 22: "## Step 5: Analysis" - assignment-style header
+6. Cell 9: "First, calculate the average..." - imperative instruction style
+7. Cell 12: "Compute the covariance matrix... Afterwards, plot..." - imperative instructions
+8. Cell 16: "Complete `eigencats_svd` by computing..." - assignment completion language
+9. Cell 20: "Reconstruct the cats... What do you notice?" - assignment question
+10. Cell 22: "**Question:** Why are the results..." - Q&A assignment format
+
+### 2.2 Bad Paths Found
+
+**Analysis:** No absolute paths or brittle paths detected in code.
+- All file references use relative paths appropriate for Jupyter notebooks
+- No Windows/Unix absolute paths found
+- Path references are minimal and correct (cats.npy, imgs/)
+
+### 2.3 Misaligned Names
+
+**Analysis:** File and folder names are already professional.
+- No files named with assignment language
+- "eigencats.ipynb" is descriptive and appropriate
+- "cats.npy" is clear and professional
+- Only issue: README references non-existent "2.3/" folder
+
+### 2.4 Audit Summary
+
+**Total Issues Found:** 12
+- README references: 2
+- Notebook markdown traces: 10
+- Path issues: 0
+- Naming issues: 0 (names are good)
+
+**All findings documented in suggestion.txt**
 
 ---
