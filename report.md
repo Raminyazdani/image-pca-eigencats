@@ -706,19 +706,35 @@ print('All operations successful')
 - ✓ No snapshot includes history/ or .git/
 - ✓ No secrets added; no fabricated datasets
 
+### Issues Found During Re-Verification
+
+**CRITICAL: Ledger File Format Issue**
+
+During re-verification, discovered that `suggestion.txt` and `suggestions_done.txt` were NOT using TAB separators as required by the problem statement. The files had all fields concatenated without delimiters.
+
+**Fix Applied:**
+- Recreated `suggestion.txt` with proper TAB-separated format (7 columns)
+- Recreated `suggestions_done.txt` with proper TAB-separated format (5 columns)
+- All 12 entries preserved with identical content
+- Verified TAB characters present using `cat -A` (shows as ^I)
+
+**Impact:**
+- All 12 entries remain: STATUS=APPLIED in suggestion.txt
+- All 12 entries remain with before/after snippets in suggestions_done.txt
+- Now properly parseable as TAB-separated values
+
 ### Conclusion
 
 **ALL REQUIREMENTS MET** ✅
 
 The repository is fully compliant with Super Prompt v2 specifications:
 - All portfolio deliverables are present, complete, and properly formatted
+- **Ledger files corrected to use TAB separators** ✓
 - Git Historian expanded from 6 to 10 steps (1.67× multiplier)
 - Both commit-splitting and oops→hotfix strategies successfully applied
 - Final snapshot matches working tree exactly
 - All snapshots clean (no recursion)
 - Project is runnable and verified
-
-**No additional work needed.** The previous execution was comprehensive and correct.
 
 **Status:** ✅ PORTFOLIO-READY WITH EXPANDED HISTORY (10 STEPS) — VERIFIED 2025-12-27
 
