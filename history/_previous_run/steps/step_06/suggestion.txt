@@ -1,0 +1,13 @@
+TYPEFILELOCATORBEFORE_SNIPPETPROPOSED_CHANGERATIONALESTATUS
+TRACEREADME.mdline 332.3//Remove assignment folder name reference; repo is at rootAPPLIED
+TRACEREADME.mdline 61cd 2.3cd /path/to/image-pca-eigencats (or just work from repo root)Remove assignment folder reference in instructionsAPPLIED
+TRACEeigencats.ipynbcell[9] (markdown)## Step 1: Preprocessing## PreprocessingRemove assignment-style "Step N:" format for professional framingAPPLIED
+TRACEeigencats.ipynbcell[12] (markdown)## Step 2: Eigenvalue Decomposition (EVD)## Eigenvalue Decomposition (EVD)Remove assignment-style "Step N:" formatAPPLIED
+TRACEeigencats.ipynbcell[16] (markdown)## Step 3: Singular Value Decomposition (SVD)## Singular Value Decomposition (SVD)Remove assignment-style "Step N:" formatAPPLIED
+TRACEeigencats.ipynbcell[20] (markdown)## Step 4: Image Reconstruction## Image ReconstructionRemove assignment-style "Step N:" formatAPPLIED
+TRACEeigencats.ipynbcell[22] (markdown)## Step 5: Analysis## AnalysisRemove assignment-style "Step N:" formatAPPLIED
+TRACEeigencats.ipynbcell[9] (markdown)First, calculate the average... After preprocessing, your dataset should contain 80 4096-dimensional vectors.Calculate the average of all cat images to find the mean cat, then mean-center the dataset. Finally, flatten each image into a vector, resulting in 80 4096-dimensional vectors.Reframe from instruction-style to descriptive narrativeAPPLIED
+TRACEeigencats.ipynbcell[12] (markdown)Compute the covariance matrix... You can use `sort_eigvectors` to do the sorting. Afterwards, plot the first four eigencats.ipynb The covariance matrix is computed using the formula... Eigenvectors are sorted in descending order by eigenvalues, and the first four eigencats are visualized.Change imperative instructions to descriptive past/present tenseAPPLIED
+TRACEeigencats.ipynbcell[16] (markdown)Complete `eigencats_svd` by computing a singular value decompositionThis section computes eigencats using singular value decompositionRemove assignment-style "complete the function" languageAPPLIED
+TRACEeigencats.ipynbcell[20] (markdown)Reconstruct the cats... Plot the first four cats... What do you notice?This section reconstructs cat faces using varying numbers of singular values (10, 40, and 80) to demonstrate dimensionality reduction effects.Remove question prompt and reframe as descriptiveAPPLIED
+TRACEeigencats.ipynbcell[22] (markdown)**Question:** Why are the results of the EVD and SVD approaches equivalent? <br> - The results of EVD...## Why EVD and SVD Produce Equivalent Results\n\nThe EVD and SVD approaches produce equivalent results because...Remove assignment question format; reframe as explanatory sectionAPPLIED

@@ -1,35 +1,25 @@
 # Image PCA & Eigencats Analysis
 
-Principal Component Analysis on cat face images.
+Principal Component Analysis on cat face images demonstrating eigendecomposition and dimensionality reduction.
 
 ## Overview
 
-Demonstrates PCA applied to cat faces to extract eigencats - principal components representing facial variations.
+This project demonstrates PCA applied to facial images to extract principal components (eigencats). Coming soon: full implementation and documentation.
 
 ## Tech Stack
 
-- Python 3.6+, NumPy, Matplotlib, Jupyter Notebook
+- Python 3.6+
+- NumPy
+- Matplotlib
+- Jupyter Notebook
 
 ## Setup
 
+Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run
+## Status
 
-```bash
-jupyter notebook eigencats.ipynb
-```
-
-## Data
-
-- `cats.npy` - 80 cat face images (64x64 grayscale)
-- `imgs/` - Reference visualizations
-
-## Features
-
-- Preprocessing and mean-centering
-- Eigenvalue decomposition (EVD)
-- Singular value decomposition (SVD)
-- Image reconstruction with varying components
+🚧 Project in development
